@@ -51,6 +51,7 @@
     </div>
 
     <script>
+        // Array of fortune messages
         const fortunes = [
             "Your future is bright!",
             "A great opportunity is ahead.",
@@ -62,10 +63,11 @@
             "A new adventure awaits you."
         ];
 
+        // Function to generate a random fortune
         function generateFortune() {
             const randomIndex = Math.floor(Math.random() * fortunes.length);
             const fortune = fortunes[randomIndex];
-            document.getElementById('fortuneMessage').textContent = fortune;
+            document.getElementById('fortuneMessage').textContent = fortune;  // Update the message
         }
     </script>
 </body>
