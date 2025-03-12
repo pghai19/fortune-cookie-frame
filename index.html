@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune Cookie Frame</title>
-
-    <!-- Meta Tags for Farcaster/Frame Recognition -->
+    <!-- Basic Meta Tags for Farcaster/Frame Recognition -->
     <meta property="og:title" content="Fortune Cookie Frame">
-    <meta property="og:description" content="Get your daily fortune with this fun interactive fortune cookie!">
-    <meta property="og:image" content="https://pghai19.github.io/fortune-cookie-frame/fortune-image.png"> <!-- Optional Image URL -->
+    <meta property="og:description" content="Click the fortune cookie for a daily fortune!">
+    <meta property="og:image" content="https://pghai19.github.io/fortune-cookie-frame/fortune-image.png"> <!-- Add image for preview -->
     <meta property="og:url" content="https://pghai19.github.io/fortune-cookie-frame/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Fortune Cookie Frame">
-    <meta name="twitter:description" content="Get your daily fortune with this fun interactive fortune cookie!">
-    <meta name="twitter:image" content="https://pghai19.github.io/fortune-cookie-frame/fortune-image.png"> <!-- Optional Image URL -->
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,7 +56,6 @@
     </div>
 
     <script>
-        // Array of fortune messages
         const fortunes = [
             "Your future is bright!",
             "A great opportunity is ahead.",
@@ -74,11 +67,10 @@
             "A new adventure awaits you."
         ];
 
-        // Function to generate a random fortune
         function generateFortune() {
             const randomIndex = Math.floor(Math.random() * fortunes.length);
             const fortune = fortunes[randomIndex];
-            document.getElementById('fortuneMessage').textContent = fortune;  // Update the message
+            document.getElementById('fortuneMessage').textContent = fortune;
         }
     </script>
 </body>
